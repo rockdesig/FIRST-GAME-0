@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#game-box {
+  height: 500px;
+  width: 390px;
+  border: 1px solid black;
+  margin: 1rem auto;
+  background: url(PHOTOS/RACING\ GAME\ BG.jpg);
+  background-size: contain;
+  overflow: hidden;
+}
+#bluecar {
+  height: 100px;
+  width: 130px;
+  /* background-color: aqua; */
+  top: 0;
+  left: 0;
+  position: relative;
+  animation: move 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 501px;
+  }
+}
+
+#user-car{
+    height: 100px;
+    width: 130px;
+    position: relative;
+    /* background-color: blue; */
+    left: 130px;
+    top: 250px;
+    text-align: center;
+}
+#game-box img{
+    height: 140px;
+}
+#result{
+  height: 200px;
+  width: 400px;
+  background-color: blueviolet;
+  border-radius: 20px;
+  margin: 1rem auto;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  display:none ;
+}
+#score{
+  font-size: 2.2rem;
+  color: brown;
+}
+#btn{
+  padding: 0.5rem 1rem;
+border-radius: 20px;
+background-color: black;
+color: chartreuse;
+font-size: 25px;
+margin-top: 10px;
+border: none;
+text-transform: uppercase;
+}
